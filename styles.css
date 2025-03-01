@@ -314,6 +314,7 @@
 }
 #cancel{
     display: none;
+    /* position: fixed; */
 }
 
 .sidebar h3{
@@ -1012,7 +1013,6 @@ label #user-down{
       .sidebar-toggle {
           left: 14px;
           top: 40px;
-          position: fixed;
       }
   
       #check:checked ~ .sidebar {
@@ -1043,19 +1043,59 @@ label #user-down{
 /* Pour le HEADER iphone */
     .header{
       gap: 5px;
+      box-sizing: border-box;
+      justify-content: space-between;
     }
     .header .righty{
       max-width: 100vw;
+      /* padding: 0%; */
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 375px){
 /* Pour le HEADER iphone */
     .header{
-      gap: 5px;
+      /* gap: 10px; */
+      box-sizing: border-box;
+      justify-content: space-between;
+      width: 100%;
     }
     .header .righty{
-      max-width: 100vw;
-      font-size: 12px;
+      max-width: 70vw;
+      padding: 0%;
     }
+
+}
+@media screen and (max-width: 360px){
+  .header{
+    /* gap: 5px; */
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .header .righty{
+    max-width: 100vw;
+  }
+  .sidebar-toggle {
+    left: 13px;
+    top: 28px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 344px){
+  .header{
+    width: 100%;
+    padding: 0;
+    /* gap: 5px; */
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .header .righty{
+    padding: 0%;
+    max-width: 100%;
+  }
+  .sidebar-toggle {
+    left: 10px;
+    top: 20px;
+    font-size: 18px;
+  }
 }
 
