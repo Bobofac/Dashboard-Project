@@ -1012,6 +1012,7 @@ label #user-down{
       .sidebar-toggle {
           left: 14px;
           top: 40px;
+          position: fixed;
       }
   
       #check:checked ~ .sidebar {
@@ -1036,5 +1037,25 @@ label #user-down{
       .mdp-container button{
         align-self: center;
       }
+}
+
+@media screen and (max-width: 414px){
+/* Pour le HEADER iphone */
+    .header{
+      gap: 5px;
+    }
+    .header .righty{
+      max-width: 100vw;
+    }
+}
+@media screen and (max-width: 360px){
+/* Pour le HEADER iphone */
+    .header{
+      gap: 5px;
+    }
+    .header .righty{
+      max-width: 100vw;
+      font-size: 12px;
+    }
 }
 
