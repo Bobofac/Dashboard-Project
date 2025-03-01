@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="dashboard">
+        <!-- NAVBAR -->
+        <input type="checkbox" id="check">
+        <header class="header">
+            <div class="lefty">
+                <!-- <i class="fa-solid fa-bars"></i><h2>Dashboard</h2>   -->
+            </div>
+            <div class="righty">
+              <div class="search">
+                <input type="text" placeholder="Search..."><i class="fa-solid fa-search"></i>
+              </div>
+                <div class="user">
+                    <img src="obj dash.JPG" alt="Moi"> 
+                </div>
+                <input type="checkbox" id="user-check">
+                <label for="user-check">
+                    <i class="fa-solid fa-angle-down" id="user-down"></i>
+                    <!-- <i class="fa-solid fa-times" id="user-times"></i> -->
+                </label>
+                    <div class="user-menu">
+                        <ul>
+                            <li><h2>Oumar Diallo</h2></li>
+                            <li><p>Administrateur</p></li>
+                            <li><a href="profilpage.html"><i class="fa-solid fa-user"></i>  Profil</a></li>
+                            <li><a href="pageparametre.html"><i class="fa-solid fa-user-cog"></i>  Paramètres</a></li>
+                            <li><a href="index.html"><i class="fa-solid fa-sign-out-alt"></i>  Déconnexion</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <!-- SIDEBAR -->
+          <!-- SideBars -->
+          <!-- <input type="checkbox" id="check"> -->
+          <label for="check" class="sidebar-toggle">
+             <i class="fa-solid fa-bars" id="btn"></i> 
+             <i class="fa-solid fa-bars" id="cancel"></i>
+         </label>
+        <aside class="sidebar">
+            <div class="user-img">
+                <img src="obj dash.JPG" alt="Moi">
+                <h2>Oumar Diallo</h2>
+            </div>
+            <hr>
+            <h3><i class="fa-solid fa-gauge"></i> Dashboard</h3>
+            <hr>
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>  article <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>  catégories <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>  auteurs <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-comment"></i>  commentaires</a></li>
+                    <li><a href="#"><i class="fa-solid fa-photo-film"></i>  medias sociaux <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>  contacts</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>  paramétres</a></li>
+                    <li><a href="#"><i class="fa-solid fa-pager"></i>  pages <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                            <li><a href="#"><i class="fa-solid fa-trash"></i>  supprimer</a></li>
+                            <li><a href="#"><i class="fa-solid fa-pencil-alt"></i>  modifier</a></li>
+                            <li><a href="#"><i class="fa-solid fa-copy"></i>  dupliquer</a></li>
+                            <li><a href="#"><i class="fa-solid fa-eye"></i>  voir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Profil Section -->
+         
+        <section class="profil">
+            <div class="profil-header">
+                <h2>Profil</h2>
+                <p><a href="dashboardpage.html">Dashboard</a> / <a href="profilpage.html">Profile</a></p>
+                <div class="profil-img">
+                    <img src="obj dash.JPG" alt="Moi">
+                    <h3>Oumar Diallo</h3>
+                    <p>Admin</p>
+                </div>
+                <div class="links-2">
+                    <div class="linky">
+                        <a href="profilpage.html">A propos</a>
+                    </div>
+                    <div class="linky">
+                        <a href="pagemdpasse.html">Mot de passe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="profil-content">
+                <div class="pro-title">
+                    <h3>Informations Personnelles</h3>
+                    <div class="edit"><i class="fa-solid fa-pen-to-square"></i> <button popovertarget="my-popover">Modifier</button>
+                    </div>
+                </div>
+                <!-- POPOVER -->
+                <div popover id="my-popover">
+                    <div class="popover-title">
+                        <h3>Modifier les informations personnelles</h3>
+                    </div>
+                    <div class="popover-content">
+                        <form>
+                            <div class="form-groupy">
+                                <label for="prenom">Prénom:</label>
+                                <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                            </div>
+                            <div class="form-groupy">
+                                <label for="nom">Nom:</label>
+                                <input type="text" class="form-control" id="nom" placeholder="Nom">
+                            </div>
+                            <div class="form-groupy">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn-primary">Enregistrer</button>
+                        </form>
+                    </div>
+                </div>
+                    <div class="info">
+                        <h4>Prénom:</h4>
+                        <p>Oumar</p>
+                        <h4>Nom:</h4>
+                        <p>Oumar Diallo</p>
+                    </div>
+                    <div class="info">
+                        <h4>Email:</h4>
+                        <p>juice.omar1@gmail.com</p>
+                    </div>
+            </div>
+        
+</body>
+</html>

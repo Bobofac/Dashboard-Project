@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="dashboard">
+        <!-- NAVBAR -->
+        <input type="checkbox" id="check">
+        <header class="header">
+            <div class="lefty">
+                <!-- <i class="fa-solid fa-bars"></i><h2>Dashboard</h2>   -->
+            </div>
+            <div class="righty">
+              <div class="search">
+                <input type="text" placeholder="Search..."><i class="fa-solid fa-search"></i>
+              </div>
+                <div class="user">
+                    <img src="obj dash.JPG" alt="Moi">
+                </div>
+                <input type="checkbox" id="user-check">
+                <label for="user-check">
+                    <i class="fa-solid fa-angle-down" id="user-down"></i>
+                    <!-- <i class="fa-solid fa-times" id="user-times"></i> -->
+                </label>
+                    <div class="user-menu">
+                        <ul>
+                            <li><h2>Oumar Diallo</h2></li>
+                            <li><p>Administrateur</p></li>
+                            <li><a href="profilpage.html"><i class="fa-solid fa-user"></i>  Profil</a></li>
+                            <li><a href="pageparametre.html"><i class="fa-solid fa-user-cog"></i>  Paramètres</a></li>
+                            <li><a href="index.html"><i class="fa-solid fa-sign-out-alt"></i>  Déconnexion</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        <!-- SIDEBAR -->
+             <!-- SideBars -->
+             
+             <label for="check" class="sidebar-toggle">
+                <i class="fa-solid fa-bars" id="btn"></i> 
+                <i class="fa-solid fa-bars" id="cancel"></i>
+            </label>
+
+        <aside class="sidebar">
+            <div class="user-img">
+                <img src="obj dash.JPG" alt="Moi">
+                <h2>Oumar Diallo</h2>
+            </div>
+            <hr>
+            <h3><i class="fa-solid fa-gauge"></i> Dashboard</h3>
+            <hr>
+            <div class="sidebar-nav">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-pen-to-square"></i>  article <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul> 
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-book"></i>  catégories <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>  auteurs <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-comment"></i>  commentaires</a></li>
+                    <li><a href="#"><i class="fa-solid fa-photo-film"></i>  medias sociaux <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-address-card"></i>  contacts</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>  paramétres</a></li>
+                    <li><a href="#"><i class="fa-solid fa-pager"></i>  pages <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="sous-nav">
+                            <li><a href="#"><i class="fa-solid fa-plus"></i>  ajouter</a></li>
+                            <li><a href="#"><i class="fa-solid fa-list"></i>  lister</a></li>
+                            <li><a href="#"><i class="fa-solid fa-trash"></i>  supprimer</a></li>
+                            <li><a href="#"><i class="fa-solid fa-pencil-alt"></i>  modifier</a></li>
+                            <li><a href="#"><i class="fa-solid fa-copy"></i>  dupliquer</a></li>
+                            <li><a href="#"><i class="fa-solid fa-eye"></i>  voir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="main">
+            <h1>Hello, Bonjour Oumar Diallo</h1>
+            <p>Bienvenue dans votre dashboard</p>
+            <div class="cartes">
+                <div class="carte-1 carte">
+                    <div class="carte-content contenty">
+                        <div class="part-1">
+                            <h1>236</h1>
+                            <p>Total Articles</p>
+                        </div>
+                        <div class="part-2">
+                            <h1><i class="fa-solid fa-scroll"></i></h1>
+                            <!-- <p><i class="fa-solid fa-square-poll-horizontal"></i></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-2 carte">
+                    <div class="carte-content contenty">
+                    <div class="part-1">
+                        <h1>10</h1>
+                        <p>Total Catégories</p>
+                    </div>
+                    <div class="part-2">
+                        <h1><i class="fa-solid fa-layer-group"></i></h1>
+                        <!-- <p><i class="fa-solid fa-chart-column"></i></p> -->
+                    </div>
+                    </div>
+                </div>
+                <div class="carte-3 carte">
+                    <div class="carte-content contenty">
+                        <div class="part-1">
+                            <h1>1738</h1>
+                            <p>Total Commentaires</p>
+                        </div>
+                        <div class="part-2">
+                            <h1><i class="fa-solid fa-comments"></i></h1>
+                            <!-- <p><i class="fa-solid fa-chart-line"></i></p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-4 carte">
+                    <div class="carte-content contenty">
+                        <div class="part-1">
+                            <h1>364</h1>
+                            <p>Abonnements</p>
+                        </div>
+                        <div class="part-2">
+                            <h2><i class="fa-solid fa-globe"></i></h2>
+                            <!-- <p><i class="fa-solid fa-chart-simple"></i></p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="h1">Article recents</th>
+                            <th class="h2"></th>
+                            <th class="h3"></th>
+                            <th class="h4"></th>
+                            <th class="h5"></th>
+                            <th class="h6"><a href="#" class="bnt-plus">Voir tous</a></th>
+                        </tr>
+                        <tr class="middle">
+                            <th class="h7">ID Articles</th>
+                            <th class="h8">Image</th>
+                            <th class="h9">Titre</th>
+                            <th class="h10">Catégories</th>
+                            <th class="h11">Auteur</th>
+                            <th class="h12">Publication</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="h13">ART-0001</td>
+                            <td class="h14"></td>
+                            <td class="h15">Intelligence artificielle</td>
+                            <td class="h16">Tech</td>
+                            <td class="h17">Oumar Diallo</td>
+                            <td class="h18">12/09/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </section>
+    
+</body>
+</html>
